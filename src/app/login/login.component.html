@@ -1,0 +1,41 @@
+
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
+    <div class="content">
+        <a href="#"><img width=200px; src="https://www.freepnglogos.com/uploads/sbi-logo-png/sbi-logo-state-bank-india-group-vector-eps-0.png" alt="logo"></a>
+     <div class="main">  
+        <input type="checkbox" id="chk" aria-hidden="true">	
+            <div for="signup" class="signup">
+                <form class="loginform">
+                   
+                    <label for="chk" aria-hidden="true">Login</label>
+                    <!-- <input id="usName" type="email" name="email" placeholder="Email" required=""> -->
+                    <input [(ngModel)]="acno" name="acno1" type="text" [placeholder]="accounts" id="login_accno" required>
+                    <!-- <input id="paswd" type="password" name="pswd" placeholder="Password" required=""> -->
+                    <input [(ngModel)]="pswd" name="pswd1" type="password"  placeholder="password" id="login_password" required>
+                    <!-- <button onclick="signin()">Login</button> -->
+                    <button (click)="login()" class="btn float-right login_btn" style="width: 50%">Login</button>
+                    <p class="mt-2">Dont Have Account?<label class="mt-1"style="font-size: 30px" for="chk" aria-hidden="true">Register</label></p>
+
+                </form>
+            </div>
+            <div for="login" class="login">
+                <form id="signupform">
+                    <label class="mt-5" for="chk" aria-hidden="true">Sign up</label>
+                    <!-- <input type="text" id="userName" name="txt" placeholder="User name" required="">
+                    <input type="email" id="email" name="email" placeholder="Email" required="">
+                    <input type="password" id="password" name="pswd" placeholder="Password" required="">
+                    <button onclick="regiter()">Sign up</button> -->
+
+                    <input [(ngModel)]="uname" name="uname" type="text" placeholder="user name" id="uname" required>
+                    <input [(ngModel)]="acno" name="acno1" type="text" placeholder="accounts number" id="login_accno" required>
+                    <input [(ngModel)]="pswd" name="pswd1" type="password" placeholder="password" id="login_password" required>
+                    <button (click)="register()" class="btn float-right login_btn" style="width: 50%">Register</button>
+
+
+                    <p class="mt-2">Already have account?please click<label style="font-size: 20px" class="mt-0" for="chk" aria-hidden="true">Login</label></p>
+
+                </form>
+            </div>
+    </div>
